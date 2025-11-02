@@ -1,0 +1,50 @@
+.filters {
+  width: 240px;
+  padding: 10px 12px;
+  border-right: 1px solid #eee;
+  background: #fafafa;
+}
+.filters-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.filters-body {
+  margin-top: 6px;
+}
+.unselect {
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.category-row input {
+  margin-right: 8px;
+  transform: translateY(1px);
+}
+.category-label {
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 900px) {
+  .filters {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+  }
+  .filters.open {
+    display: block;
+  }
+  .filters.collapsed {
+    display: none;
+  }
+}

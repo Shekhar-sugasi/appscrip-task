@@ -1,0 +1,45 @@
+.grid-wrap {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.left-col {
+  width: 260px;
+}
+.right-col {
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* responsiveness */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left-col {
+    display: none;
+  } /* hide filters on small tablet for simplified layout — toggling is in Filters component */
+}
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .grid-wrap {
+    flex-direction: column;
+  }
+  .left-col {
+    display: block;
+    width: 100%;
+  }
+}
+.no-results {
+  color: #777;
+  padding: 20px;
+  text-align: center;
+}

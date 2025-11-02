@@ -1,0 +1,27 @@
+.main {
+  padding: 40px 0 80px;
+}
+.page-title {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.page-sub {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 28px;
+  text-align: center;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 20px;
+  }
+  .page-sub {
+    font-size: 12px;
+    padding: 0 16px;
+  }
+}
