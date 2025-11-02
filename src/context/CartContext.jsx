@@ -1,9 +1,5 @@
 import React, { createContext, useState } from "react";
 
-/*
-  Context stores favorites/cartish for this assignment.
-  Expand later to include cart items/quantities as needed.
-*/
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {

@@ -16,14 +16,13 @@
   gap: 18px;
 }
 
-/* responsiveness */
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .left-col {
     display: none;
-  } /* hide filters on small tablet for simplified layout — toggling is in Filters component */
+  }
 }
 @media (max-width: 600px) {
   .grid {

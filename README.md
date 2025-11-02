@@ -1,16 +1,13 @@
-# React + Vite
+# Appscrip Assignment – Product Listing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Built using React.js.
+2. Implemented Product Listing Page with sidebar filters and product cards.
+3. Used Fake Store API to fetch live product data.
+4. Supports filter by category and unselect all functionality.
+5. Includes Cart Context for favorite/cart state management.
+6. Pure CSS styling, no external UI frameworks used.
+7. Fully responsive — optimized for desktop and mobile views.
+8. SEO-friendly with semantic HTML and alt tags.
+9. To run locally:  
+   npm install
+   npm run dev

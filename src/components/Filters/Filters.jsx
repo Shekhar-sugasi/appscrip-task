@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import "./Filters.css";
 
-/*
-  Props:
-    selectedCategories: array of selected category strings
-    onToggle: function(cat) -> toggles selection
-    onClear: function() -> clears all selections
-*/
 const Filters = ({ selectedCategories = [], onToggle, onClear }) => {
-  // keep few example categories (from FakeStore)
   const categories = [
     "men's clothing",
     "women's clothing",
@@ -17,6 +10,7 @@ const Filters = ({ selectedCategories = [], onToggle, onClear }) => {
   ];
 
   const [open, setOpen] = useState(true);
+
   return (
     <aside className={`filters ${open ? "open" : "collapsed"}`}>
       <div className="filters-head">

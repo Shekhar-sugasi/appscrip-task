@@ -4,21 +4,19 @@ import Filters from "../Filters/Filters";
 import ProductCard from "../ProductCard/ProductCard";
 import "./ProductGrid.css";
 
-/*
-  ProductGrid:
-  - fetch products
-  - hold selectedCategories
-  - pass toggles to Filters
-*/
 const ProductGrid = () => {
   const [products, setProducts] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
 
   useEffect(() => {
     let mounted = true;
-    fetchProducts().then((data) => {
-      if (mounted) setProducts(data || []);
-    });
+    fetchProducts()
+      .then((data) => {
+        if (mounted) setProducts(data || []);
+      })
+      .catch((err) => {
+        console.error("fetch error", err);
+      });
     return () => {
       mounted = false;
     };
